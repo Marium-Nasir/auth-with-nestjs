@@ -21,8 +21,6 @@ export class MailService {
       port: 587,
       secure: false,
       auth: {
-        // user: 'mariumnasirse@gmail.com',
-        // pass: 'xsmtpsib-a68402af8b3b3904df73ce4bc3c97cb083d5733fb887c24387b87417e8b8d9c3-pwODzbx1In0aF3Qd',
         user: this.configService.get<string>('UserEmail'),
         pass: this.configService.get<string>('sendInBlueKey'),
       },
